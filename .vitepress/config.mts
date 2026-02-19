@@ -3,35 +3,46 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "HayFrp Docs",
-  description: "官方文档",
+  description: "HayFrp Web 前端路由及 API 文档",
   lang: 'zh-CN',
   outDir: './docs/.vitepress/dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '使用指南', link: '/use' },
-      { text: '示例', link: '/markdown-examples' }
+      { text: '路由文档', link: '/guide/routes' },
+      { text: 'API文档', link: '/api/user' },
+      { text: '使用指南', link: '/use' }
     ],
 
     sidebar: [
+      {
+        text: '路由文档',
+        items: [
+          { text: '路由概览', link: '/guide/routes' },
+          { text: '公开路由', link: '/guide/public' },
+          { text: '需要登录的路由', link: '/guide/auth' },
+          { text: '路由守卫', link: '/guide/guard' }
+        ]
+      },
+      {
+        text: 'API 文档',
+        items: [
+          { text: '用户账号 API', link: '/api/user' },
+          { text: '隧道管理 API', link: '/api/proxy' },
+          { text: '公共 API', link: '/api/public' }
+        ]
+      },
       {
         text: '使用指南',
         items: [
           { text: '基本教程', link: '/use' }
         ]
-      },
-      {
-        text: '示例',
-        items: [
-          { text: 'Markdown 示例', link: '/markdown-examples' },
-          { text: '运行时 API 示例', link: '/api-examples' }
-        ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/HayFrp-Team/HayFrp-Docs' }
     ],
 
     footer: {
