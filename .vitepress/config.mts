@@ -5,6 +5,7 @@ export default defineConfig({
   title: "HayFrp Docs",
   description: "官方文档",
   lang: 'zh-CN',
+  outDir: './docs/.vitepress/dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
