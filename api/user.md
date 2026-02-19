@@ -1,6 +1,6 @@
 # 用户账号 API
 
-> API 地址: `https://api.hayfrp.com`
+> API 地址: `https://api.hayfrp.1zyq1.com`
 >
 > **注意**: 调用 API 时需要添加请求头 `waf: off` 绕过雷池防火墙
 
