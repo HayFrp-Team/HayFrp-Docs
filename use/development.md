@@ -52,8 +52,6 @@ VITE_APP_TITLE=HayFrp Web
 npm run dev
 ```
 
-访问地址: http://localhost:5173
-
 ## 开发规范
 
 ### 命名规范
@@ -230,8 +228,6 @@ npm install
 # 启动开发服务器
 npm run dev
 ```
-
-访问地址: http://localhost:5173
 
 ### 生产环境
 
